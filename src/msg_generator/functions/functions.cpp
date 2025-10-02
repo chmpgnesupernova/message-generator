@@ -1,5 +1,15 @@
 #include "../../hdr/msg.h"
 
+
+//*************universal funtions *************/
+char* msg_to_string (const char* _string) {
+    
+
+}
+
+
+//*************handle buffer ******************/
+
 bool is_buffer_clear (const char* _buffer) {
     return _buffer[0] == '\0';
 }
@@ -18,6 +28,8 @@ void clear_buffer (char* _buffer) {
     }
     _buffer[0] = '\0';
 }
+
+//***********packing message ****************/
 
 void pack_attach_request (msg _msg, char* _buffer){
     if (is_buffer_full(_buffer) == true || is_buffer_clear(_buffer) == false) { 
